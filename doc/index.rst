@@ -166,7 +166,7 @@ Events. Symfony AI supports that by abstracting the conversion and returning a `
 
     // Initialize Platform and LLM
 
-    $agent = new Agent($model);
+    $agent = new Agent($platform, $model);
     $messages = new MessageBag(
         Message::forSystem('You are a thoughtful philosopher.'),
         Message::ofUser('What is the purpose of an ant?'),
